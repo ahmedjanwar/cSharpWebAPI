@@ -1,0 +1,7 @@
+/Users/hamood/Desktop/Development/cSharpWebAPI/BlazorApp1/obj/Debug/net8.0/BlazorApp1.csproj.AssemblyReference.cache
+/Users/hamood/Desktop/Development/cSharpWebAPI/BlazorApp1/obj/Debug/net8.0/BlazorApp1.GeneratedMSBuildEditorConfig.editorconfig
+/Users/hamood/Desktop/Development/cSharpWebAPI/BlazorApp1/obj/Debug/net8.0/BlazorApp1.AssemblyInfoInputs.cache
+/Users/hamood/Desktop/Development/cSharpWebAPI/BlazorApp1/obj/Debug/net8.0/BlazorApp1.AssemblyInfo.cs
+/Users/hamood/Desktop/Development/cSharpWebAPI/BlazorApp1/obj/Debug/net8.0/BlazorApp1.csproj.CoreCompileInputs.cache
+/Users/hamood/Desktop/Development/cSharpWebAPI/BlazorApp1/obj/Debug/net8.0/BlazorApp1.MvcApplicationPartsAssemblyInfo.cache
+/Users/hamood/Desktop/Development/cSharpWebAPI/BlazorApp1/obj/Debug/net8.0/BlazorApp1.sourcelink.json

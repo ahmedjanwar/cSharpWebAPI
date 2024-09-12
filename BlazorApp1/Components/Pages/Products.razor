@@ -1,0 +1,27 @@
+@page "/products"
+@inject ProductService ProductService
+
+<h3>Products</h3>
+
+<ul>
+    @if (products == null)
+    {
+        <li>Loading...</li>
+    }
+    else
+    {
+        @foreach (var product in products)
+        {
+            <li>@product.Name - @product.Description</li>
+        }
+    }
+</ul>
+
+@code {
+    private Product[] products;
+
+    protected override async Task OnInitializedAsync()
+    {
+        products = await ProductService.GetProductsAsync();
+    }
+}
