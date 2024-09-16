@@ -16,7 +16,7 @@ https://localhost:5001/api/products
 #### Steps in Postman:
 1. Open Postman.
 2. Set the request method to GET.
-3. Enter the URL: `https://localhost:5001/api/products`.
+3. Enter the URL: `https://localhost:5100/api/products`.
 4. Click Send.
 
 #### Expected Response (200 OK):
@@ -46,7 +46,7 @@ https://localhost:5001/api/products
 
 #### Steps in Postman:
 1. Set the request method to GET.
-2. Enter the URL with the product ID: `https://localhost:5001/api/products/1`.
+2. Enter the URL with the product ID: `https://localhost:5100/api/products/1`.
 3. Click Send.
 
 #### Expected Response (200 OK):
@@ -75,7 +75,7 @@ If the product is not found, you will receive a 404 Not Found response:
 
 #### Steps in Postman:
 1. Set the request method to POST.
-2. Enter the URL: `https://localhost:5001/api/products`.
+2. Enter the URL: `https://localhost:5100/api/products`.
 3. Select the Body tab.
 4. Choose raw and set the format to JSON.
 5. Enter the following JSON data for the new product:
@@ -107,7 +107,7 @@ If the product is not found, you will receive a 404 Not Found response:
 
 #### Steps in Postman:
 1. Set the request method to PUT.
-2. Enter the URL with the product ID: `https://localhost:5001/api/products/1`.
+2. Enter the URL with the product ID: `https://localhost:5100/api/products/1`.
 3. Select the Body tab.
 4. Choose raw and set the format to JSON.
 5. Enter the updated product data:
@@ -140,7 +140,7 @@ If the product is not found, you will receive a 404 Not Found response:
 
 #### Steps in Postman:
 1. Set the request method to DELETE.
-2. Enter the URL with the product ID: `https://localhost:5001/api/products/2`.
+2. Enter the URL with the product ID: `https://localhost:5100/api/products/2`.
 3. Click Send.
 
 #### Expected Response (204 No Content):
