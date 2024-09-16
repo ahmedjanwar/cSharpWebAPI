@@ -3,20 +3,23 @@
 
 <h3>Products</h3>
 
-<ul>
-    @if (products == null)
-    {
-        <li>Loading...</li>
-    }
-    else
-    {
+@if (products == null)
+{
+    <p>Loading products...</p>
+}
+else
+{
+    <div style="display: flex; flex-wrap: wrap; gap: 20px;">
         @foreach (var product in products)
         {
-            <li>@product.Name - @product.Description</li>
+            <div style="border: 1px solid #ddd; padding: 20px; width: 200px;">
+                <h4>@product.Name</h4>
+                <p>@product.Description</p>
+                <p><strong>Price:</strong> $@product.Price</p>
+            </div>
         }
-    }
-</ul>
-
+    </div>
+}
 @code {
     private Product[] products;
 
