@@ -10,7 +10,19 @@ builder.Services.AddControllers();
 builder.Services.AddDbContext<WarehouseDbContext>(options =>
     options.UseSqlite("Data Source=warehouse.db"));
 
+// Add CORS support
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowBlazorClient",
+        policy => policy.WithOrigins("http://localhost:5059") // URL of your Blazor app
+                        .AllowAnyMethod()
+                        .AllowAnyHeader());
+});
+
 var app = builder.Build();
+
+// Use CORS
+app.UseCors("AllowBlazorClient");
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

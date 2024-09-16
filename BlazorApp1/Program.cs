@@ -11,7 +11,7 @@ builder.RootComponents.Add<HeadOutlet>("head::after");
 // Register ProductService
 builder.Services.AddScoped<ProductService>();
 
-// Add HttpClient pointing to the API URL
-builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri("https://localhost:5001/api/") });
+// Set the base address for the Web API (replace with actual API URL)
+builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri("http://localhost:5100/api/") });
 
 await builder.Build().RunAsync();
