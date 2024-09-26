@@ -9,6 +9,10 @@ builder.Services.AddControllers();
 // Add DbContext and use SQLite
 builder.Services.AddDbContext<WarehouseDbContext>(options =>
     options.UseSqlite("Data Source=warehouse.db"));
+// Add Oracle DbContext
+//builder.Services.AddDbContext<ApplicationDbContext>(options =>
+//    options.UseOracle(builder.Configuration.GetConnectionString("OracleDbConnection")));
+
 
 // Add CORS support
 builder.Services.AddCors(options =>
